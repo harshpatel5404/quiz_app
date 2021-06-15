@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:quiz_app/home.dart';
+import 'package:quiz_app/quizpage.dart';
 
 void main() => runApp(MyApp());
 
@@ -12,6 +13,10 @@ class MyApp extends StatelessWidget{
       debugShowCheckedModeBanner: false,
       title: 'Material App',
       home: SplashScreen(),
+      routes: {
+        '/home' : (context)=>Home(),
+        '/quizpage' : (context)=>Quiz(),
+      },
     );
   }
 }
@@ -28,10 +33,11 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     Timer(Duration(seconds: 1), () {
-      Navigator.push(
-        context,
-        MaterialPageRoute(builder: (context) => MyHome()),
-      );
+      // Navigator.push(
+      //   context,
+      //   MaterialPageRoute(builder: (context) => MyHome()),
+      // );
+      Navigator.pushNamed(context, '/quizpage');
     });
   }
   @override

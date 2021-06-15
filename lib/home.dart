@@ -1,7 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:quiz_app/quizpage.dart';
 
-void main() => runApp(MyHome());
+void main() => runApp(Home());
+
+
+class Home extends StatelessWidget {
+  const Home({ Key? key }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: "Quiz App",
+        home: MyHome(),
+    );
+  }
+}
 
 class MyHome extends StatefulWidget {
   @override
@@ -14,7 +28,7 @@ class _MyHomeState extends State<MyHome> {
       padding: EdgeInsets.all(15),
       child: InkWell(
         onTap: (){
-          
+          Navigator.push(context, MaterialPageRoute(builder: (context)=>Quiz()));
         },
         child: Material(
           color: Colors.indigo,
@@ -78,10 +92,9 @@ class _MyHomeState extends State<MyHome> {
       "images/py.jpg",
       "images/ruby.jpg",
     ];
-    return MaterialApp(
-      title: 'Material App',
-      home: Scaffold(
+    return Scaffold(
           appBar: AppBar(
+            // backgroundColor: Color.fromARGB(30, 0, 255, 255),
             title: Text('Quiz App'),
           ),
           body: ListView(
@@ -92,7 +105,7 @@ class _MyHomeState extends State<MyHome> {
               quizcard("Python", img[3]),
               quizcard("Ruby", img[4]),
             ],
-          )),
+          ),
     );
   }
 }

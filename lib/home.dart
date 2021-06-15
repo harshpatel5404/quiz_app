@@ -95,7 +95,7 @@ class _MyHomeState extends State<MyHome> {
     return Scaffold(
           appBar: AppBar(
             // backgroundColor: Color.fromARGB(30, 0, 255, 255),
-            title: Text('Quiz App'),
+            title: Text('Quizz App'),
           ),
           body: ListView(
             children: [

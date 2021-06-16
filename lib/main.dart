@@ -37,7 +37,7 @@ class _SplashScreenState extends State<SplashScreen> {
       //   context,
       //   MaterialPageRoute(builder: (context) => MyHome()),
       // );
-      Navigator.pushNamed(context, '/quizpage');
+      Navigator.pushNamed(context, '/home');
     });
   }
   @override

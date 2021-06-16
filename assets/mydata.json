@@ -1,0 +1,134 @@
+{
+    "results": [
+        {
+            "category": "Entertainment: Books",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "Which of the following authors was not born in England? ",
+            "correct_answer": "Arthur Conan Doyle",
+            "options": [
+                "Graham Greene",
+                "H G Wells",
+                "Arthur C Clarke",
+                "Arthur Conan Doyle"
+            ]
+        },
+        {
+            "category": "Entertainment: Books",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "What position does Harry Potter play in Quidditch?",
+            "correct_answer": "Seeker",
+            "options": [
+                "Beater",
+                "Chaser",
+                "Keeper",
+                "Seeker"
+            ]
+        },
+        {
+            "category": "Entertainment: Books",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "What was the name of the Mysterious Island, in Jules Verne&#039;s The Mysterious Island?",
+            "correct_answer": "Lincoln Island",
+            "options": [
+                "Vulcania Island",
+                "Lincoln Island",
+                "Prometheus Island",
+                "Neptune Island"
+            ]
+        },
+        {
+            "category": "Entertainment: Books",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "In the The Hobbit, who kills Smaug?",
+            "correct_answer": "Bard",
+            "options": [
+                "Bard",
+                "Bilbo Baggins",
+                "Gandalf the Grey",
+                "Frodo"
+            ]
+        },
+        {
+            "category": "Entertainment: Books",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "The novel Of Mice And Men was written by what author? ",
+            "correct_answer": "John Steinbeck ",
+            "options": [
+                "George Orwell",
+                "John Steinbeck ",
+                "Mark Twain ",
+                "Harper Lee"
+            ]
+        },
+        {
+            "category": "Entertainment: Books",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "J.K. Rowling completed Harry Potter and the Deathly Hallows in which hotel in Edinburgh, Scotland?",
+            "correct_answer": "The Balmoral",
+            "options": [
+                "The Dunstane Hotel",
+                "Hotel Novotel",
+                "The Balmoral",
+                "Sheraton Grand Hotel &amp; Spa"
+            ]
+        },
+        {
+            "category": "Entertainment: Books",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "Which of these book series is by James Patterson?",
+            "correct_answer": "Maximum Ride",
+            "options": [
+                "Harry Potter",
+                "The Legend of Xanth",
+                "The Bartemaeus Trilogy",
+                "Maximum Ride"
+            ]
+        },
+        {
+            "category": "Entertainment: Books",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "In Little Women, which of the March sisters married Laurie?",
+            "correct_answer": "Amy",
+            "options": [
+                "Beth",
+                "Jo",
+                "Amy",
+                "Meg"
+            ]
+        },
+        {
+            "category": "Entertainment: Books",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "What is the name of Eragon&#039;s dragon in Eragon?",
+            "correct_answer": "Saphira",
+            "options": [
+                "Glaedr",
+                "Saphira",
+                "Thorn",
+                "Arya"
+            ]
+        },
+        {
+            "category": "Entertainment: Books",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "Who is the author of the series Malazan Book of the Fallen?",
+            "correct_answer": "Steven Erikson",
+            "options": [
+                "Steven Erikson",
+                "Ian Cameron Esslemont",
+                "George R. R. Martin",
+                "J. R. R. Tolkien"
+            ]
+        }
+    ]
+}

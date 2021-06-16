@@ -26,57 +26,52 @@ class _MyHomeState extends State<MyHome> {
   Widget quizcard(String lang, String img) {
     return Padding(
       padding: EdgeInsets.all(15),
-      child: InkWell(
-        onTap: (){
-          Navigator.push(context, MaterialPageRoute(builder: (context)=>Quiz()));
-        },
-        child: Material(
-          color: Colors.indigo,
-          elevation: 10,
-          borderRadius: BorderRadius.circular(20),
-          child: Container(
-            child: Column(
-              children: [
-                Padding(
-                  padding: EdgeInsets.all(10),
-                  child: Material(
-                    elevation: 5,
-                    borderRadius: BorderRadius.circular(100),
-                    child: Container(
-                      height: 200,
-                      width: 200,
-                      child: ClipOval(
-                        child: Image(
-                          image: AssetImage("./assets/${img}"),
-                          fit: BoxFit.cover,
-                        ),
+      child:  Material(
+        color: Colors.indigo,
+        elevation: 10,
+        borderRadius: BorderRadius.circular(20),
+        child: Container(
+          child: Column(
+            children: [
+              Padding(
+                padding: EdgeInsets.all(10),
+                child: Material(
+                  elevation: 5,
+                  borderRadius: BorderRadius.circular(100),
+                  child: Container(
+                    height: 200,
+                    width: 200,
+                    child: ClipOval(
+                      child: Image(
+                        image: AssetImage("./assets/${img}"),
+                        fit: BoxFit.cover,
                       ),
                     ),
                   ),
                 ),
-                Center(
-                  child: Text(
-                    lang,
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold),
-                  ),
+              ),
+              Center(
+                child: Text(
+                  lang,
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold),
                 ),
-                Container(
-                  padding: EdgeInsets.all(20),
-                  child: Text(
-                    "Hii as sdfgf wer x csfd erna qwdghasr jfsoiosdn nsd asdg hello my name usb folng weight vol.sdn nsd asdg hello my name usb folng as sdfgf wer x csfd erna qwdghasr jfsoiosdn nsd asdg hello my name usb folng weight vol.sdn nsd asdg hello my name usb folng weight volas fd.",
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 10,
-                        fontWeight: FontWeight.bold),
-                    textAlign: TextAlign.justify,
-                    maxLines: 5,
-                  ),
+              ),
+              Container(
+                padding: EdgeInsets.all(20),
+                child: Text(
+                  "Hii as sdfgf wer x csfd erna qwdghasr jfsoiosdn nsd asdg hello my name usb folng weight vol.sdn nsd asdg hello my name usb folng as sdfgf wer x csfd erna qwdghasr jfsoiosdn nsd asdg hello my name usb folng weight vol.sdn nsd asdg hello my name usb folng weight volas fd.",
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 10,
+                      fontWeight: FontWeight.bold),
+                  textAlign: TextAlign.justify,
+                  maxLines: 5,
                 ),
-              ],
-            ),
+              ),
+            ],
           ),
         ),
       ),
@@ -92,19 +87,22 @@ class _MyHomeState extends State<MyHome> {
       "images/py.jpg",
       "images/ruby.jpg",
     ];
+    List course = ["c++","Java","Java Script","Python","Ruby"];
     return Scaffold(
           appBar: AppBar(
             // backgroundColor: Color.fromARGB(30, 0, 255, 255),
             title: Text('Quiz App'),
           ),
-          body: ListView(
-            children: [
-              quizcard("C++", img[0]),
-              quizcard("Java", img[1]),
-              quizcard("Java Script", img[2]),
-              quizcard("Python", img[3]),
-              quizcard("Ruby", img[4]),
-            ],
+          body: ListView.builder(
+            itemBuilder: (context, index) =>
+                InkWell(
+                  child: quizcard(course[index], img[index]),
+                  onTap: (){
+                    if(index == 0){
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>Quiz()));
+                  }},
+                ),
+            itemCount: course.length,
           ),
     );
   }
